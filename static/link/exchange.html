@@ -1,0 +1,860 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+		<title>WINCENT Forex | WINCENT 丨 Forex 丨 Gold 丨 CFDs丨 brokers</title>
+
+		<meta name="keywords" content="" />
+
+		<meta name="description" content="" />
+
+		<link rel="shortcut icon" href="/favicon.ico" />
+
+		<script src="js/jquery-1.8.3.min.js"></script>
+
+		<script src="js/common.js"></script>
+
+		<link href="css/bootstrap.min.css" rel="stylesheet" />
+
+		<link href="css/bootstrap-responsive.min.css" rel="stylesheet" />
+
+		<link href="css/base.css" rel="stylesheet" />
+
+		<link href="css/blue.css" rel="stylesheet" />
+
+		<link href="css/functional.css" rel="stylesheet" />
+
+		<link href="css/glyphicons.css" rel="stylesheet" />
+
+		<link href="css/jquery-ui.css" rel="stylesheet" />
+
+		<link href="css/animate.min.css" rel="stylesheet" />
+
+		<link href="css/mediaelementplayer.min.css" rel="stylesheet" />
+
+		<link href="css/style.css" rel="stylesheet" />
+
+		<style>
+			.pagination {
+				display: inline-block;
+				padding-left: 0;
+				margin: 20px 0;
+				border-radius: 4px;
+			}
+			
+			.pagination> li {
+				display: inline;
+			}
+			
+			.pagination> li> a,
+			.pagination> li> span {
+				position: relative;
+				float: left;
+				padding: 6px 12px;
+				margin-left: -1px;
+				line-height: 1.428571429;
+				text-decoration: none;
+				background-color: #ffffff;
+				border: 1px solid #dddddd;
+			}
+			
+			.pagination> li:first-child> a,
+			.pagination> li:first-child> span {
+				margin-left: 0;
+				border-bottom-left-radius: 4px;
+				border-top-left-radius: 4px;
+			}
+			
+			.pagination> li:last-child> a,
+			.pagination> li:last-child> span {
+				border-top-right-radius: 4px;
+				border-bottom-right-radius: 4px;
+			}
+			
+			.pagination> li> a:hover,
+			.pagination> li> span:hover,
+			.pagination> li> a:focus,
+			.pagination> li> span:focus {
+				background-color: #eeeeee;
+			}
+			
+			.pagination> .active> a,
+			.pagination> .active> span,
+			.pagination> .active> a:hover,
+			.pagination> .active> span:hover,
+			.pagination> .active> a:focus,
+			.pagination> .active> span:focus {
+				z-index: 2;
+				color: #ffffff;
+				cursor: default;
+				background-color: #428bca;
+				border-color: #428bca;
+			}
+			
+			.pagination> .disabled> span,
+			.pagination> .disabled> a,
+			.pagination> .disabled> a:hover,
+			.pagination> .disabled> a:focus {
+				color: #999999;
+				cursor: not-allowed;
+				background-color: #ffffff;
+				border-color: #dddddd;
+			}
+			
+			.pagination-lg> li> a,
+			.pagination-lg> li> span {
+				padding: 10px 16px;
+				font-size: 18px;
+			}
+			
+			.pagination-lg> li:first-child> a,
+			.pagination-lg> li:first-child> span {
+				border-bottom-left-radius: 6px;
+				border-top-left-radius: 6px;
+			}
+			
+			.pagination-lg> li:last-child> a,
+			.pagination-lg> li:last-child> span {
+				border-top-right-radius: 6px;
+				border-bottom-right-radius: 6px;
+			}
+			
+			.pagination-sm> li> a,
+			.pagination-sm> li> span {
+				padding: 5px 10px;
+				font-size: 12px;
+			}
+			
+			.pagination-sm> li:first-child> a,
+			.pagination-sm> li:first-child> span {
+				border-bottom-left-radius: 3px;
+				border-top-left-radius: 3px;
+			}
+			
+			.pagination-sm> li:last-child> a,
+			.pagination-sm> li:last-child> span {
+				border-top-right-radius: 3px;
+				border-bottom-right-radius: 3px;
+			}
+			
+			.pager {
+				padding-left: 0;
+				margin: 20px 0;
+				text-align: center;
+				list-style: none;
+			}
+			
+			.pager:before,
+			.pager:after {
+				display: table;
+				content: " ";
+			}
+			
+			.pager:after {
+				clear: both;
+			}
+			
+			.pager:before,
+			.pager:after {
+				display: table;
+				content: " ";
+			}
+			
+			.pager:after {
+				clear: both;
+			}
+			
+			.pager li {
+				display: inline;
+			}
+			
+			.pager li> a,
+			.pager li> span {
+				display: inline-block;
+				padding: 5px 14px;
+				background-color: #ffffff;
+				border: 1px solid #dddddd;
+				border-radius: 15px;
+			}
+			
+			.pager li> a:hover,
+			.pager li> a:focus {
+				text-decoration: none;
+				background-color: #eeeeee;
+			}
+			
+			.pager .next> a,
+			.pager .next> span {
+				float: right;
+			}
+			
+			.pager .previous> a,
+			.pager .previous> span {
+				float: left;
+			}
+			
+			.pager .disabled> a,
+			.pager .disabled> a:hover,
+			.pager .disabled> a:focus,
+			.pager .disabled> span {
+				color: #999999;
+				cursor: not-allowed;
+				background-color: #ffffff;
+			}
+			
+			#container {
+				padding-bottom: 0px !important;
+			}
+		</style>
+
+	</head>
+
+	<body>
+
+		<div class="navbar navbar-fixed-top">
+
+			<div class="navbar-inner">
+
+				<div class="container">
+					<a class="btn btn-default btn-dropnav" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a>
+					<a class="brand" href="index.html"><img src="images/logo.png" alt="" /></a>
+
+					<div class="nav-collapse collapse">
+
+						<ul class="nav pull-right animated">
+
+							<li class="dropdown">
+								<a class="dropdown-toggle" role="button" href="javascript:void(0)">WINCENT</a>
+
+								<ul class="dropdown-menu" role="menu">
+
+									<li>
+										<a href='about.html' tabindex="-1">关于WINCENT</a>
+									</li>
+
+									<li>
+										<a href='protocol.html' tabindex="-1">公司条款协议</a>
+									</li>
+
+									<li>
+										<a href='risk.html' tabindex="-1">投资风险提示</a>
+									</li>
+
+									<li>
+										<a href='Q&A.html' tabindex="-1">常见问题解答</a>
+									</li>
+
+								</ul>
+
+							</li>
+
+							<li class="dropdown">
+								<a class="dropdown-toggle" role="button" href="javascript:void(0)">交易产品</a>
+
+								<ul class="dropdown-menu" role="menu">
+
+									<li>
+										<a href='exchange.html' tabindex="-1">外汇交易产品</a>
+									</li>
+
+									<li>
+										<a href='precious.html' tabindex="-1">贵金属交易类</a>
+									</li>
+
+									<li>
+										<a href='oil.html' tabindex="-1">国际原油交易</a>
+									</li>
+
+									<li>
+										<a href='transaction.html' tabindex="-1">产品交易信息</a>
+									</li>
+
+								</ul>
+
+							</li>
+
+							<li class="dropdown">
+								<a class="dropdown-toggle" role="button" href="javascript:void(0)">交易平台</a>
+
+								<ul class="dropdown-menu" role="menu">
+
+									<li>
+										<a href='soft-pc.html' tabindex="-1">PC桌面版软件</a>
+									</li>
+
+									<li>
+										<a href='soft-phone.html' tabindex="-1">手机交易软件</a>
+									</li>
+
+									<li>
+										<a href='#' target="_blank" tabindex="-1">开设真实账户</a>
+									</li>
+
+									<li>
+										<a href='#' target="_blank" tabindex="-1">注册模拟账户</a>
+									</li>
+
+								</ul>
+
+							</li>
+
+							<li class="dropdown">
+								<a class="dropdown-toggle" role="button" href="javascript:void(0)">交易学院</a>
+
+								<ul class="dropdown-menu" role="menu">
+
+									
+									<li>
+										<a href='anewslist1.html?id=1' tabindex="-1">外汇市场分析</a>
+									</li>
+
+									<li>
+										<a href='anewslist1.html?id=2' tabindex="-1">财经新闻资讯</a>
+									</li>
+
+									<li>
+										<a href='anewslist1.html?id=3' tabindex="-1">外汇行情资讯</a>
+									</li>
+
+								</ul>
+
+							</li>
+
+							<li class="dropdown">
+								<a class="dropdown-toggle" role="button" href="javascript:void(0)">代理合作</a>
+
+								<ul class="dropdown-menu" role="menu">
+
+									<li>
+										<a href='recommend.html' tabindex="-1">朋友推荐计划</a>
+									</li>
+
+									<li>
+										<a href='#' tabindex="-1">IB代理申请</a>
+									</li>
+
+									<li>
+										<a href='cooperation.html' tabindex="-1">白标合作机会</a>
+									</li>
+
+									
+
+								</ul>
+
+							</li>
+
+							<li class="dropdown">
+								<a class="dropdown-toggle" role="button" href="javascript:void(0)">公告活动</a>
+
+								<ul class="dropdown-menu" role="menu">
+
+									<li>
+										<a href='anewslist1.html?id=4' tabindex="-1">公告发布</a>
+									</li>
+
+									<li>
+										<a href='anewslist1.html?id=5' tabindex="-1">最新活动</a>
+									</li>
+
+								</ul>
+
+							</li>
+
+							<!--<li class="dropdown">
+								<a class="dropdown-toggle" role="button" href="http://manage.jrsfin.com">客户登录</a>
+
+							</li>
+
+							<img style="float:left; margin-left:-15px; margin-top:20px" src="images/iconhot.png" alt="" />-->
+
+						</ul>
+
+					</div>
+
+					<div class="nav-btn">
+						<a href='#' target="_blank" class="btn btn-success ">开设真实账户</a>
+						<a href="#" class="btn btn-primary " target="_blank">注册模拟账户</a>
+
+						<!--<div class="btn-group">
+
+							<a class="btn btn-default dropdown-toggle" style='width:60px;' data-toggle="dropdown"> 语言 </a>
+
+							<ul class="dropdown-menu default-dropdown" style='margin-top:0; min-width:60px;' role="menu">
+
+								<li>
+									<a href="#">简体中文</a>
+								</li>
+
+								<li>
+									<a href="#">繁體中文</a>
+								</li>
+
+								<li>
+									<a href="#">English</a>
+								</li>
+
+							</ul>
+
+						</div>-->
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+		<div class="bar-title">
+
+			<div> 外汇交易产品 </div>
+
+		</div>
+
+		<div id="content">
+
+			<div class="container" style=" min-height:350px">
+
+				<div class="row">
+
+					<div class="span12">
+
+						<div style="min-height:200px">
+
+							<div id="content">
+								<div class="container" style="margin-top:50px;">
+									<div class="row">
+										<div class="span12">
+											<div class="img-banner">
+												<img alt="WINCENT有限公司 - 外汇交易01" src="images/banner40.jpg" />
+											</div>
+											<div class="img-word">
+												<p>
+													外汇保证金交易就是通过与外汇经纪公司或者做市商开通交易账号，并且与做市商以差价合约的方式进行的保证金外汇交易。保证金交易没有实际的换汇产生，交易方便灵活。在外汇交易当中，包含了来自政府、银行、基金、外汇交易商以及散户的参与。他们组成了这个全球交易量最庞大的市场。
+												</p>
+												<p style="font-weight:bold;">
+													24 小时市场
+												</p>
+												<p>
+													市场分为亚洲盘、欧洲盘和美洲盘。市场从周一早上开盘，每天 24 小时不间断交易，一直到周六早上收盘。在一周的时间里，只要交易者能够登陆交易平台，就可以随时随地地参与到市场波动当中。
+												</p>
+												<p style="font-weight:bold;">
+													低交易成本
+												</p>
+												<p>
+													外汇保证金交易并没有高额的手续费。在大部分情况下，外汇交易是免佣金的。交易成本仅仅是买价和卖价的差价。因为保证金交易的报价都是投行的批发价，这比实际换汇的零售价格要优惠很多。
+												</p>
+											</div>
+										</div>
+										<div class="span12" style="margin-top:80px;margin-bottom:80px;">
+											<div class="img-banner" style="float:right;">
+												<img alt="WINCENT有限公司 - 外汇交易02" src="images/banner41.jpg" />
+											</div>
+											<div class="img-word" style="float:left;">
+												<p style="font-weight:bold;">
+													市场公开透明
+												</p>
+												<p>
+													外汇市场每天的交易量达到 5.2 万亿美元。市场比传统的股票、债券或者期货市场都要庞大许多。巨大的交易量使市场不易受某一银行或机构操控价格。另外，投资人不需要担心自己的订单无人接管。
+												</p>
+												<p style="font-weight:bold;">
+													与国际接轨
+												</p>
+												<p>
+													全球事件的不断发生，影响着各国货币的涨涨跌跌。投资人可以在一个账号里，交易全球多种货币对，做到身在一国，交易全球。
+												</p>
+												<p style="font-weight:bold;">
+													货币对
+												</p>
+												<p>
+													WINCENT的 MetaTrader 4 交易平台提供接近 40 个货币对。在报价当中，我们把货币对中的前一个货币称为基础货币，后一个货币称为浮动货币。
+												</p>
+											</div>
+										</div>
+										<div class="span12" style="margin-bottom:50px;">
+											<div class="img-banner">
+												<img alt="WINCENT有限公司 - 外汇交易03" src="images/banner42_wy6egNI7px1t313dcvFdhOO5tTfr0tcB.jpg" />
+											</div>
+											<div class="img-word">
+												<p style="font-weight:bold;">
+													主要货币对
+												</p>
+												<p>
+													在外汇市场中有六大主要货币对，这六个货币对的交易占了所有货币交易的 85%以上。它们分别是欧元/美元，美元/日元，英镑/美元，美元/瑞郎，美元/加元，澳币/美元。
+												</p>
+												<p style="font-weight:bold;">
+													直盘和交叉盘
+												</p>
+												<p>
+													在国际惯例中，我们把货币对当中含美金的货币对叫做直盘。除了以上六个主要货币对以外，还有纽元/美元，美元/新元等。而在货币对当中没有美金出现的货币对，我们称之为交叉盘。如欧元/英镑、澳币/欧元和欧元/日元。
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		</div>
+
+		<div id="footer">
+
+			<div class="container">
+
+				<div class="row">
+
+					<div class="span3" style=" width:240px">
+
+						<div class="bottom-logo"><img src="images/logo.png" alt="" /></div>
+
+						<p style="color:#fff;font-weight:normal; font-size:12px;">联系邮箱</br>
+						  info@wincentinfo.com						</p>
+
+				  </div>
+
+					<div class="span3" style="width:150px">
+						<a class="dropdown-toggle" role="button" href="javascript:void(0)">
+
+							<h5>选择WINCENT</h5>
+
+						</a>
+
+						<ul class="animated">
+
+							<li>
+								<a href='about.html' tabindex="-1">关于WINCENT</a>
+							</li>
+
+							<li>
+								<a href='protocol.html' tabindex="-1">公司条款协议</a>
+							</li>
+
+							<li>
+								<a href='risk.html' tabindex="-1">投资风险提示</a>
+							</li>
+
+							<li>
+								<a href='Q&A.html' tabindex="-1">常见问题解答</a>
+							</li>
+
+						</ul>
+
+					</div>
+
+					<div class="span3" style="width:150px">
+						<a class="dropdown-toggle" role="button" href="javascript:void(0)">
+
+							<h5>交易产品</h5>
+
+						</a>
+
+						<ul class="animated">
+
+							<li>
+								<a href='exchange.html' tabindex="-1">外汇交易产品</a>
+							</li>
+
+							<li>
+								<a href='precious.html' tabindex="-1">贵金属交易类</a>
+							</li>
+
+							<li>
+								<a href='oil.html' tabindex="-1">国际原油交易</a>
+							</li>
+
+							<li>
+								<a href='transaction.html' tabindex="-1">产品交易信息</a>
+							</li>
+
+						</ul>
+
+					</div>
+
+					<div class="span3" style="width:150px">
+						<a class="dropdown-toggle" role="button" href="javascript:void(0)">
+
+							<h5>交易平台</h5>
+
+						</a>
+
+						<ul class="animated">
+
+							<li>
+								<a href='soft-pc.html' tabindex="-1">PC桌面版软件</a>
+							</li>
+
+							<li>
+								<a href='soft-phone.html' tabindex="-1">手机交易软件</a>
+							</li>
+
+							<li>
+								<a href='#' target="_blank" tabindex="-1">开设真实账户</a>
+							</li>
+
+							<li>
+								<a href='#' target="_blank" tabindex="-1">注册模拟账户</a>
+							</li>
+
+						</ul>
+
+					</div>
+
+					<div class="span3" style="width:150px">
+						<a class="dropdown-toggle" role="button" href="javascript:void(0)">
+
+							<h5>交易学院</h5>
+
+						</a>
+
+						<ul class="animated">
+
+							
+
+							<li>
+								<a href='anewslist1.html?id=1' tabindex="-1">外汇市场分析</a>
+							</li>
+
+							<li>
+								<a href='anewslist1.html?id=2' tabindex="-1">财经新闻资讯</a>
+							</li>
+
+							<li>
+								<a href='anewslist1.html?id=3' tabindex="-1">外汇行情资讯</a>
+							</li>
+
+						</ul>
+
+					</div>
+
+					<div class="span3" style="width:150px">
+						<a class="dropdown-toggle" role="button" href="javascript:void(0)">
+
+							<h5>代理合作</h5>
+
+						</a>
+
+						<ul class="animated">
+
+							<li>
+								<a href='recommend.html' tabindex="-1">朋友推荐计划</a>
+							</li>
+
+							<li>
+								<a href='#' tabindex="-1">IB代理申请</a>
+							</li>
+
+							<li>
+								<a href='cooperation.html' tabindex="-1">白标合作机会</a>
+							</li>
+
+							
+
+						</ul>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<div id="copywrite">
+
+			<div class="container" style=" font-weight:normal; font-size:12px">
+
+				<div class="row">
+
+					<div class="span12" style=" border-bottom:1px solid #fff;border-top:1px solid #fff">
+
+						<div class="copywrite-left">
+
+							<ul>
+
+								<li style="display:none;">使用条款</li>
+
+								<li style="display:none;">隐私政策</li>
+
+								<li>
+									<a href='about.html' target="_blank" style="color: white;text-decoration: none;">关于我们</a>
+								</li>
+
+								<li>
+									<a href='Q&A.html' style="color: white;text-decoration: none;" target="_blank"> 常见问题解答</a>
+								</li>
+
+							</ul>
+
+						</div>
+
+						<div class="copywrite-right">
+
+							<ul>
+
+								<li></li>
+
+								<li></li>
+
+								<li>
+									<div class="copywrite-right">
+                                      <ul>
+                                        <li></li>
+                                        <li></li>
+                                        <img src="images/fsp.png" alt="fsp" width="180" height="73" />
+                                        <li><a href="http://wpa.qq.com/msgrd?v=3&amp;uin=&amp;site=qq&amp;menu=yes" target="_blank"></a></li>
+                                      </ul>
+									  <div class="erweima">121</div>
+								  </div>
+									<a href="http://wpa.qq.com/msgrd?v=3&uin=&site=qq&menu=yes" target="_blank"></a>								</li>
+							</ul>
+
+							<div class="erweima">121</div>
+
+					  </div>
+
+					</div>
+
+					<div class="span12" style="padding-top:20px;padding-bottom:20px; line-height:24px"> 风险提示：本网站信息为一般产品信息，并未将您的个人投资目标，财政状况或需求考虑在内。外汇保证金和差价合约交易涉及高风险，未必适合所有投资者。 您的交易亏损有可能超过您的原始投入资金。您并不拥有基础产品的所有权。本网站内容并不构成投资建议。在决定开户交易前，请质询独立专业意见。WINCENT不接受美国、日本等国家之开户申请。WINCENT致力于建立一个高商业道德、强专业性，以及高信任水平的公司企业文化。现在，我们已经建立了公正、诚实和完整的声誉，这也是公司最有价值的资产。我们良好的名声是由我们高道德水准和 强专业性的员工所组建的。请联系我们 获取更多信息。 <br>
+
+						<p style="text-align: center;">copyright © 2019 WINCENT INTERNATIONAL INFORMATION COMPANY LIMITED. All rights reserved.</p>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<style>
+			.section-nav {
+				z-index: 9999;
+				margin: 0;
+				width: 100px;
+				height: 382px;
+				position: fixed;
+				top: 25%;
+				background: #000;
+				opacity: 0.8;
+				font-size: 14px;
+				font-weight: bold;
+				font-family: Microsoft YaHei;
+				right: 0 !important;
+			}
+			
+			.section-nav li {
+				width: 70px;
+				height: 80px;
+				margin-left: auto;
+				margin-right: auto;
+				border-bottom: 1px solid #fff;
+				text-align: center;
+				margin-top: 10px;
+				color: #fff;
+				list-style-type: none;
+			}
+			
+			.liwu {
+				width: 80%;
+				height: auto;
+				overflow: hidden;
+				margin-left: auto;
+				margin-right: auto
+			}
+			
+			.liwu_left {
+				float: left;
+			}
+			
+			.liwu_right {
+				float: right;
+				width: 60%;
+				color: #fff;
+				font-size: 16px;
+				font-weight: bold;
+				font-family: Microsoft YaHei;
+				line-height: 40px;
+				margin-top: 30px;
+			}
+		</style>
+
+		<ul class="section-nav">
+
+			<div class="erweima1"></div>
+
+			<li>
+				<a href='#' style="color:#fff;" target="_blank"><img alt="" src="images/edit_user.png" /><br />
+
+					<span style="margin-top:15px;display:block;">真实账户</span></a>			</li>
+
+			<li>
+				<a href='soft-pc.html' style="color:#fff;" target="_blank"><img alt="" src="images/account_and_control.png" /><br />
+
+					<span style="margin-top:15px;display:block;">软件下载</span></a>			</li>
+
+			<li>
+				<a href="#" style="color:#fff;" target="_blank"><img alt="" src="images/dashboard.png" /><br />
+
+					<span style="margin-top:15px;display:block;">用户登录</span></a><a href="http://wpa.qq.com/msgrd?v=3&uin=&site=qq&menu=yes" style="color:#fff;" target="_blank"><br />
+				    </a>			</li>
+
+			<!--<li style="border:none; color:#fff;"><img src="images/gongzer.png" alt="" /><br />
+
+    <span style="margin-top:10px;display:block; font-size:12px;">微信公众号</span> </li>-->
+		</ul>
+
+		<script src="js/bounce.js"></script>
+
+		<script src="js/jquery-ui.js"></script>
+
+		<script>
+			$("#tabs").tabs();
+
+			//menu
+
+			$(document).ready(function() {
+
+				$('.wecat').click(function() {
+
+					$('.erweima').toggle(""); //可以自己修改速度
+
+				});
+
+				$('.wecat1').click(function() {
+
+					$('.erweima1').toggle(""); //可以自己修改速度
+
+				});
+
+			});
+
+			$("#accordion").accordion();
+
+			if(!(/msie [6|7|8|9]/i.test(navigator.userAgent))) {
+
+				(function() {
+
+					window.scrollReveal = new scrollReveal({
+						reset: true
+					});
+
+				})();
+
+			};
+		</script>
+
+	</body>
+
+</html>

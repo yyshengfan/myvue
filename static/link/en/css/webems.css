@@ -1,0 +1,45 @@
+/*新闻列表默认样式*/
+ul.newlist{list-style-type: none;}
+ul.newlist a{text-decoration: none;color: #666;font-size: 14px;}
+ul.newlist a:hover{color: #333;}
+ul.newlist li{width: 99%x;padding-bottom: 5px; height:30px; line-height:30px; border-bottom:1px #ccc dashed;}
+ul.newlist .left{float: left;width: 100px;text-align: center;}
+ul.newlist .left img{width: 90px;height: 90px;vertical-align: middle;}
+ul.newlist .right{float: left;width: 490px;}
+ul.newlist .clear{clear: both;}
+ul.newlist h3{font-size: 15px;color: #333;padding: 0;margin: 0;}
+ul.newlist p{font-size: 13px;color: #999;padding: 5px;text-indent: 2em;margin: 0;}
+ul.newlist p a{font-size: 12px;}
+ul.newlist em{float: right;font-style: normal;font-weight: normal;font-size: 13px;}
+/*分页默认样式*/
+div.listNav0{font-family: "Arial";margin: 10px 30px;height: 30px;}
+div.listNav0 .nums{float: left;}
+div.listNav0 .nums a{text-decoration: none;color: #333;}
+div.listNav0 .nums a:hover{color: #fff;background-color: #aaa;}
+div.listNav0 .nums a,div.listNav0 .nums span{display: inline-block;height: 20px;width: 20px;border: solid 1px #aaa;text-align: center;color: #333;margin: 0 2px;font-size: 12px;line-height: 20px;}
+div.listNav0 .nums span{background-color: #eee;color: #aaa;cursor: default;}
+div.listNav0 .nums a.frist{background-color: #0a0;}
+div.listNav0 .nums span.on{background-color: #aaa;color: #fff;}
+div.listNav0 .goto{float: right;}
+/*分页主题-图标*/
+div.listNav1{font-family: "Arial";margin: 10px 30px;height: 30px;}
+div.listNav1 .nums{float: left;}
+div.listNav1 .nums a{text-decoration: none;color: #333;}
+div.listNav1 .nums a:hover{color: #fff;background-color: #aaa;}
+div.listNav1 .nums a,div.listNav1 .nums span{display: inline-block;height: 20px;width: 20px;border: solid 1px #aaa;text-align: center;color: #333;margin: 0 2px;font-size: 12px;line-height: 20px;}
+div.listNav1 .nums span{background-color: #eee;color: #aaa;cursor: default;}
+div.listNav1 .nums a.frist{background-color: #0a0;}
+div.listNav1 .nums span.frist{background-color: #6a6;}
+div.listNav1 .nums span.on{background-color: #aaa;color: #fff;}
+div.listNav1 .goto{float: right;}
+#txtNum{width:30px; margin-right:5px;}
+
+/*页码*/
+.page{margin:20px auto;text-align: center;list-style:none;padding:0;font-family:"microsoft yahei";overflow:hidden;zoom:1;}
+.page li{font-size:12px;float:left;margin-right:5px;}
+.page li a{display:block;height:17px;line-height:17px;padding:2px 5px;background-color:#fff;border:1px solid #ccc;text-decoration:none;color:#666666;}
+.page li a:hover{border:1px solid #0180CF;color:#0180CF;}
+.page li a.select{border:1px solid #0180CF;color:#FFFFFF;background-color:#018FCF;}
+.page li.page_all{line-height:23px;}
+.page_submit{background:none;border:1px solid #ccc;margin-left: 5px;cursor:pointer;color:#666666;}
+.page_submit:hover{background:#f0f0f0;margin-left: 5px;cursor:pointer;}

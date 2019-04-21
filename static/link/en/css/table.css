@@ -1,0 +1,44 @@
+body,ul,li{
+	margin: 0;
+	padding: 0;
+}
+li{
+	list-style: none;
+}
+#res{
+	width: 100%;
+	font-family: "trebuchet ms","microsoft yahei";
+	font-size: 13px;
+}
+#res ul{
+	
+}
+#res ul li{
+	float: left;
+	width: 96%;
+	padding: 0 2%;
+	height: 30px;
+	line-height: 30px;
+}
+#res ul li:first-child{
+	border-bottom: 1px solid #ff9c00;
+	height: 40px;
+	line-height: 40px;
+}
+#res ul li:nth-child(2n){
+	background: #f7f7f7;
+}
+#res ul li span{
+	float: left;
+	width: 12%;
+	text-align: center;
+}
+#res ul li span:nth-child(1),#res ul li span:nth-child(5),#res ul li span:nth-child(6),#res ul li span:nth-child(7),#res ul li span:nth-child(8){
+	color: #333;
+}
+#res .red{
+	color: red;
+}
+#res .green{
+	color: green;
+}

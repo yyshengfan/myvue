@@ -1,0 +1,76 @@
+function getNewList(toUrl,id,s,cp,divs,v){
+	    v=v||0;
+        id=id||'101791762'; 
+        s=s||'20'; 
+        cp=cp||'1'; //alert("qq"+divs);
+        divs=divs||'content'; 		
+		toUrl=toUrl||'/zh-cn/autonews.php';		
+        var web="http://open.tool.hexun.com/MongodbNewsService/";
+        var url = web+"newsListPageByJson.jsp?id="+id+"&s="+s+"&cp="+cp+"&priority=0&";  
+		//http://open.tool.hexun.com/MongodbNewsService/newsListPageByJson.jsp?id=136147678&s=30&cp=1&priority=0
+        $.ajax({
+                 type: "get",
+                 async: false,
+                 url: url,
+                 dataType: "jsonp",
+                 jsonp: "callback",
+                 jsonpCallback:divs,
+                 success: function(json){
+					// alert("qq"+divs);
+           		     getNewData(json.result,divs);
+					 if(v>0) getNewData2(json.result,"a");
+                 },
+                 error: function(){
+                     alert('fail');
+                 }
+             });		 
+			//获取新数据
+			function getNewData(hx_json,divid)
+			{
+					var hc='';
+					hc+="<ul class='newlist'>";
+					for(var i=0;i<hx_json.length;i++){
+						var url=hx_json[i].entityurl;
+						//url=url.replace(/[^\d]+$/,'');					
+						id=url.replace(/[^\d]/g,'');
+						var leng=''
+						leng=(hx_json[i].title).length	
+						if  (leng>30){
+							leng=(hx_json[i].title.substr(0, 30))+"..."
+							}else{
+							leng=(hx_json[i].title)
+							}
+						myurl=url.split("/");
+						myurl[2]=	myurl[2].replace('.hexun.com','');					
+						hc+="<li >";
+						hc+="<a href=\""+toUrl+"?id="+id+"&url="+myurl[2]+"\" target=\"_blank\" title=\""+((hx_json[i].title)).replace(/\+/g, " ") +"\" >"+leng.replace(/\+/g, " ")	+"</a>";//标题	
+						var urls="id="+id+"&url="+myurl[2]; 
+					 	hc+="<span class='date'>"+(hx_json[i].entitytime.substr(0, 5))+"</span>";//时间						
+						hc+="</li>";		
+					}
+					hc+="</ul>";
+					$("#"+divid).html(hc);
+			
+			}
+			
+			function getNewData2(hx_json,divid)
+			{
+					for(var j=0;j<hx_json.length;j++){
+						var url=hx_json[j].entityurl;			
+						id=url.replace(/[^\d]/g,'');
+						myurl=url.split("/");	
+						myurl[2]=	myurl[2].replace('.hexun.com','');				
+					   var urls="id="+id+"&url="+myurl[2]; 
+					           $.ajax({type: "get",async: false,url: "getnews2.php?"+urls,dataType: "json",json: "callback",
+								   success: function(json){
+									   var temp=(decodeURIComponent(json.content)).replace(/\+/g, " ");
+									   $("#"+divid+j).html(temp.substring(0,100));
+									   $("#img"+j).html("<img src='"+json.img+"' title='"+json.title+"' alt='' height='120' width='160' />");
+								   },
+								   error: function(){}
+							   });
+	
+					}
+			}
+
+} 
